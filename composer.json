@@ -1,0 +1,8 @@
+{
+    "name": "ulysse/mvc_structure",
+    "autoload": {
+        "psr-4": {
+            "name\\": "src/"
+        }
+    }
+}
