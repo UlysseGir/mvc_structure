@@ -10,6 +10,6 @@ require SRC . 'helper.php';
 
 $router = new name\Router($_SERVER["REQUEST_URI"]);
 //Index of the webPage
-$router -> get('/', "ExempleManager@index");
+$router -> get('/', "ExempleController@index");
 
 $router->run();

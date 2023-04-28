@@ -1,8 +1,8 @@
 <?php
 namespace name\Controllers;
 
-/** Class Controller **/
-class Controller {
+/** Class ExempleController **/
+class ExempleController {
     private $manager;
 
     public function __construct() {
