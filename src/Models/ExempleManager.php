@@ -2,14 +2,14 @@
 namespace name\Models;
 
 /** Class ExempleManager **/
-class ExempleManager {
+class ExempleManager extends ControllerManager{
 
-    private $bdd;
+    public function getAllVoyage(){
+        $stmt = $this->bdd->prepare("SELECT * FROM `destinations`");
+        $stmt->execute();
+        $stmt->setFetchMode(\PDO::FETCH_CLASS,"Voyage\Models\Voyage");
 
-    public function __construct() {
-        $this->bdd = new \PDO('mysql:host='.HOST.';dbname=' . DATABASE . ';charset=utf8;' , USER, PASSWORD);
-        $this->bdd->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
+        return $stmt->fetchAll();
     }
-
 
 }
