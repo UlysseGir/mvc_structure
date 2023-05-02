@@ -9,3 +9,7 @@
 
 faire la commande dans le dossier public
 php -S localhost:8000
+
+# Tests :
+
+lancer les tests : ./vendor/bin/phpunit tests

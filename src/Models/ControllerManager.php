@@ -4,7 +4,7 @@ namespace name\Models;
 /** Class ControllerManager **/
 class ControllerManager {
 
-    private $bdd;
+    protected $bdd;
 
     public function __construct() {
         $this->bdd = new \PDO('mysql:host='.HOST.';dbname=' . DATABASE . ';charset=utf8;' , USER, PASSWORD);

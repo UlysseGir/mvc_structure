@@ -1,6 +1,8 @@
 <?php
 namespace name\Controllers;
 
+use name\Models\ExempleManager;
+
 /** Class ExempleController **/
 class ExempleController {
     private $manager;
@@ -10,7 +12,6 @@ class ExempleController {
     }
 
     public function index() {
-        $test = $this->manager->getAllVoyage();
         require VIEWS . 'Exemple/homepage.php';
     }
 
